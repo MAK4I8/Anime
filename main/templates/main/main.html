@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'main/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/special.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/featured.css' %}">
+
+    <script src="{% static 'main/libs/gsap/gsap.min.js' %}" defer></script>
+    <script src="{% static 'main/libs/gsap/ScrollTrigger.min.js' %}" defer></script>
+    <script src="{% static 'main/libs/gsap/ScrollSmoother.min.js' %}" defer></script>
+    <script src="{% static 'main/js/main.js' %}" defer></script>
+    <script src="https://kit.fontawesome.com/fde982502f.js" crossorigin="anonymous" defer></script>
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>

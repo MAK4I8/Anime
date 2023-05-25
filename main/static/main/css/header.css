@@ -1,0 +1,53 @@
+.header {
+    background: url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: calc(var(--index) * 3);
+}
+
+.header .main {
+    padding-top: 28vh;
+}
+
+.header .main h1 {
+    font-size: calc(var(--index) * 2.5);
+    font-weight: 600;
+}
+
+.header .main p {
+    font-size: calc(var(--index) * 1);
+    color: #dddddd;
+}
+
+.header .main .buttons {
+    display: flex;
+    margin-top: 30px;
+}
+
+.header .main .buttons .learn-more {
+    width: calc(var(--index) * 7.4);
+    height: calc(var(--index) * 2.6);
+    border-radius: 14px;
+    border: 0;
+    background: #fafafa;
+}
+
+.header .main .buttons .learn-more a {
+    color: #000;
+    font-size: calc(var(--index) * 0.9);
+}
+
+.header .main .buttons .to-watch {
+    width: calc(var(--index) * 7.4);
+    height: calc(var(--index) * 2.6);
+    border-radius: 14px;
+    border: 0;
+    background: #1C9C4A;
+    margin-left: 30px;
+}
+
+.header .main .buttons .to-watch a {
+    color: #fafafa;
+    font-size: calc(var(--index) * 0.9);
+}

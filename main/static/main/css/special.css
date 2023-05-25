@@ -1,0 +1,17 @@
+:root {
+    --index: calc(1vh + 1vw);
+}
+
+.special {
+    z-index: 1;
+    position: relative;
+    bottom: calc(var(--index) * 6);
+}
+
+.block {
+    width: calc(var(--index) * 9);
+    height: 250px;
+    background: #333;
+    border-radius: 14px;
+    overflow: hidden;
+}

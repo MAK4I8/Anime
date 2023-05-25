@@ -1,0 +1,122 @@
+{% extends 'main/main.html' %}
+
+{% load static %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+
+<nav class="nav">
+    <div class="container">
+        <ul>
+            <li><img src="{% static 'main/img/logo.png' %}" class="logo"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Collections</a></li>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text">
+            </div>
+            <li><button class="login"><a href="#">Log in</a></button></li>
+            <li><button class="get-started"><a href="#">Get started</a></button></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="wraper">
+    <div class="content">
+        <header class="header">
+            <div class="container">
+                <div class="main">
+                    <h1>Chainsaw Man</h1>
+                    <p>Denji has a simple dream  ― to live a happy<br>and peaceful life, spending time with a girl</p>
+                    <div class="buttons">
+                        <button class="learn-more"><a href="#">Learn More</a></button>
+                        <button class="to-watch"><a href="#">To Watch</a></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="special">
+            <div class="container">
+                <div class="main-text">
+                    <h1>Special For You</h1>
+                </div>
+
+                <div class="row-special">
+                    <div class="block" style=
+                        "
+                        background: url({{item1.image.url}});
+                        background-size: cover;
+                        "
+                    ></div>
+                    <div class="block" style=
+                        "
+                        background: url({{item2.image.url}});
+                        background-size: cover;
+                        "
+                    ></div>
+                    <div class="block" style=
+                        "
+                        background: url({{item3.image.url}});
+                        background-size: cover;
+                        "
+                    ></div>
+                    <div class="block" style=
+                        "
+                        background: url({{item4.image.url}});
+                        background-size: cover;
+                        "
+                    ></div>
+                    <div class="block" style=
+                        "
+                        background: url({{item5.image.url}});
+                        background-size: cover;
+                        "
+                    ></div>
+                    <div class="block" style=
+                        "
+                        background: url({{item6.image.url}});
+                        background-size: cover;
+                        "
+                    ></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="featured">
+            <div class="container">
+                <div class="main-text">
+                    <h1>Featured Collections</h1>
+                </div>
+
+                <div class="row-featured">
+                    <div class="featured-block">
+                        <h1>
+                            Top 20<br>
+                            Romance anime
+                        </h1>
+                    </div>
+                    <div class="featured-block">
+                        <h1>
+                            The Best<br>
+                            Classic Animes
+                        </h1>
+                    </div>
+                    <div class="featured-block">
+                        <h1>
+                            Top 20<br>
+                            Anime for 2023
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

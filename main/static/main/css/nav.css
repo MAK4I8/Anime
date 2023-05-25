@@ -1,0 +1,77 @@
+:root {
+    --index: calc(1vh + 1vw);
+}
+
+.nav {
+    width: 100%;
+    height: calc(var(--index) * 3);
+    background: #101010;
+    position: fixed;
+    z-index: 2;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    line-height: calc(var(--index) * 3);
+    justify-content: space-between;
+}
+
+.nav .logo {
+    height: calc(var(--index) * 1.5);
+    margin-top: calc(var(--index) * 0.75);
+}
+
+.nav ul li a {
+    color: #dddddd;
+    font-weight: 500;
+}
+
+.nav .search {
+    position: relative;
+}
+
+.nav ul input {
+    width: calc(var(--index) * 21);
+    height: calc(var(--index) * 1.8);
+    background: #888;
+    border: 0;
+    border-radius: 8px;
+    padding-left: calc(var(--index) * 2);
+    font-size: calc(var(--index) * 0.8);
+}
+
+.nav ul input:focus {
+    outline: none;
+}
+
+.nav ul .search i {
+    position: absolute;
+    line-height: calc(var(--index) * 3);
+    padding-left: 10px;
+}
+
+.nav ul li .login {
+    width: calc(var(--index) * 4);
+    height: calc(var(--index) * 1.8);
+    background: #1C9C4A;
+    border: 0;
+    border-radius: 14px;
+}
+
+.nav ul li .login a {
+    font-size: calc(var(--index) * 0.8);
+}
+
+.nav ul li .get-started {
+    width: calc(var(--index) * 6);
+    height: calc(var(--index) * 1.8);
+    background: #fafafa;
+    border: 0;
+    border-radius: 14px;
+}
+
+.nav ul li .get-started a {
+    color: #000;
+    font-size: calc(var(--index) * 0.8);
+}
